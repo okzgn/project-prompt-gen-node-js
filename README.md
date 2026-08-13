@@ -122,21 +122,21 @@ CONTEXT: Project structure.
 --- CONFIGURATION FILES ---
 
 ================ FILE: package.json ================
-```json
+---json
 {
   "name": "project-prompt-generator",
   "version": "1.0.0"
 }
-```
+---
 --------------------------------------------------
 
 --- SOURCE CODE IN ROOT FOLDER ---
 
 ================ FILE: index.js ================
-```javascript
+---javascript
 const { generateProjectPrompt } = require('./core/default_to_str');
-...
-```
+///...
+---
 --------------------------------------------------
 
 --- END OF CONTEXT ---
