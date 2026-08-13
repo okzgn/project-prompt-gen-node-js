@@ -113,7 +113,9 @@ Supported extensions are automatically mapped to Markdown syntax tags:
 The generated `.txt` file is formatted as follows:
 
 ```markdown
-CONTEXT: Project structure.
+--- START OF PROJECT CONTEXT ---
+PROJECT: "backend-api"
+
 --- PROJECT STRUCTURE ---
 ├── core
 │   └── default_to_str.js
@@ -139,7 +141,7 @@ const { generateProjectPrompt } = require('./core/default_to_str');
 ---
 --------------------------------------------------
 
---- END OF CONTEXT ---
+--- END OF PROJECT CONTEXT ---
 
 Refactor the authentication logic using best practices.
 ```

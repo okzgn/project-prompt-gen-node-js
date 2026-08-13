@@ -53,7 +53,8 @@ function generateProjectPrompt(instructions = '', rootPath, folderToInclude = []
     console.log(`Project: ${absolutePath}`);
 
     // 2. Header
-    let prompt = `CONTEXT: Project structure.\n`
+    let projectName = path.basename(rootPath);
+    let prompt = `--- START OF PROJECT CONTEXT ---\n\nPROJECT: "${projectName}"\n\n`
 
     // 3. Directory Tree
     prompt += `--- PROJECT STRUCTURE ---\n`;
@@ -79,7 +80,7 @@ function generateProjectPrompt(instructions = '', rootPath, folderToInclude = []
     }
 
 
-    prompt += `\n--- END OF CONTEXT ---\n\n`;
+    prompt += `\n--- END OF PROJECT CONTEXT ---\n\n`;
     if(instructions){ prompt += instructions + '\n'; }
     return prompt;
 }
