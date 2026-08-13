@@ -1,6 +1,6 @@
 # Project Prompt Generator
 
-A lightweight, **zero-dependency** Node.js CLI tool designed to pack an entire codebase (or specific modules) into a single, structured Markdown context prompt for Large Language Models (LLMs).
+A lightweight, zero-dependency Node.js CLI tool designed to pack an entire codebase (or specific modules) into a single, structured Markdown context prompt for Large Language Models (LLMs).
 
 It automatically generates a visual directory tree, reads source code files, maps code syntax highlighting, handles file size limits to save LLM tokens, and provides intelligent folder filtering (restricted vs. whitelisted subfolders).
 
@@ -114,7 +114,7 @@ The generated `.txt` file is formatted as follows:
 
 ```markdown
 --- START OF PROJECT CONTEXT ---
-PROJECT: "backend-api"
+PROJECT: "project-prompt-generator"
 
 --- PROJECT STRUCTURE ---
 ├── core
