@@ -108,7 +108,7 @@ Supported extensions are automatically mapped to Markdown syntax tags:
 
 ---
 
-## 📄 Output Format Example
+## 📄 Output Prompt Format Example
 
 The generated `.txt` file is formatted as follows:
 
