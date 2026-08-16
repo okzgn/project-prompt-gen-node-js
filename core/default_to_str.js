@@ -5,6 +5,7 @@ const path = require('path');
 const IGNORED_DIRS = new Set([ '_prompts', '.gradle', '.sourcemaps', '.tmp', 'node_modules', '.git', '.vscode', '.idea', '.angular', '.cache' ]);
 const IGNORED_FILES = new Set([ 'package-lock.json', 'tsconfig.tsbuildinfo', '.editorconfig', 'LICENSE', '.gitignore' ]);
 const LANG_MAP = {
+  hta: 'html',
   php: 'php',
   go: 'go',
   ts: 'typescript',
